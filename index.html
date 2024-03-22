@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-
-  <title>Temperature Converter</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Wizard</title>
+    <meta name="google-site-verification" content="iNzSj2wvdEOVu1PtrK5FfEiu_teOG2LQn5i3kg-xozQ" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 </head>
 <body>
-
-  <div class="container">
-    <div class="row justify-content-md-center">
-      <div class="col-md-6 text-center">
-        <h1>Temperature Converter</h1>
-
-        <div id="celsius">
-          <input type="number" class="form-control form-control-lg form-padding" id="input-celsius" placeholder="celsius">
-
+    <div class="container">
+        <h1 class="heading">Temperature Wizard - A Temperature Converter </h1>
+        <div class="temp-container">
+            <label for="Celcius">Celcius</label>
+            <input 
+            onchange ="computeTemp(event)"
+            type="number" 
+            name="Celcius" 
+            id="Celcius" 
+            class="Celcius" 
+            placeholder="Enter Temperature in Celcius"/>    
         </div>
-
-        <div id="fahrenheit">
-          <input type="number" class="form-control form-control-lg form-padding" id="input-fahrenheit" placeholder="fahrenheit">
-
+        <div class="temp-container">
+            <label for="fahre">Fahrenheit</label>
+            <input 
+            onchange="computeTemp(event)"
+            type="number" 
+            name="Fahrenheit" 
+            id="Fahrenheit" 
+            class="Fahrenheit" 
+            placeholder="Enter Temperature in Fahrenheit"/>    
         </div>
-
-        <div id="kelvin">
-          <input type="number" class="form-control form-control-lg form-padding" id="input-kelvin" placeholder="kelvin">
-
+        <div class="temp-container">
+            <label for="Kelvin">Kelvin</label>
+            <input 
+            onchange="computeTemp(event)"
+            type="number" 
+            name="Kelvin" 
+            id="Kelvin" 
+            class="Kelvin" 
+            placeholder="Enter Temperature in Kelvin"/>    
         </div>
-
-      </div>
-
     </div>
-    <footer>
-          <p>By Elle J.</p>
-          <p><a href="https://github.com/itsellej" target="_blank"><img class="icons" src="https://res.cloudinary.com/itsellej/image/upload/v1533400136/rock-paper-scissors/github-icon.png" alt="Github icon"></a>
-            <a href="https://codepen.io/itsellej/" target="_blank"><img class="icons" src="https://res.cloudinary.com/itsellej/image/upload/v1533400135/rock-paper-scissors/codepen-icon.png" alt="Codepen icon"></a></p>
-          <p><em>Credit - icons from <a href="https://pngtree.com/">pngtree</a></em></p>
-        </footer>
-
-  </div>
-
-  <script src="main.js" charset="utf-8"></script>
+    
+    
+    <script src="./script.js"></script>
 </body>
 </html>
